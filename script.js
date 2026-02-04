@@ -25,7 +25,7 @@ form?.addEventListener('submit', async (e)=>{
   const data = Object.fromEntries(new FormData(form).entries());
   // TODO: Replace with your backend endpoint
   await new Promise(r=>setTimeout(r,800));
-  statusEl.textContent = `ধন্যবাদ, ${data.name || 'বন্ধু'}! আমরা দ্রুত যোগাযোগ করব।`;
+  statusEl.textContent = `Thanks, ${data.name || 'friend'}! We’ll get back to you shortly.`;
   form.reset();
 });
 
